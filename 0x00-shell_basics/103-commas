@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -avnp
+ls -Ap | tr '\n' ',' | sed 's/\(.*\),/\1\n/'
